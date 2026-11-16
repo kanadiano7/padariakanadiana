@@ -1,0 +1,139 @@
+/* ===== Estilos gerais ===== */
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  color: #3b2a1a;               /* cor do texto */
+  background-color: #fdf6ec;    /* cor de fundo */
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* ===== Cabeçalho (id: só existe um na página) ===== */
+#cabecalho {
+  background-color: #8a4b1f;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+}
+
+#cabecalho h1 {
+  margin: 0 0 10px 0;
+}
+
+/* ===== Menu de navegação ===== */
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  display: inline-block;        /* menu em linha */
+  padding: 8px 16px;
+  margin: 0 4px;
+  border-radius: 4px;
+}
+
+nav a:hover {
+  background-color: #f2b45c;    /* efeito ao passar o rato */
+  color: #3b2a1a;
+}
+
+#botao-modo {
+  margin-top: 12px;
+  padding: 8px 14px;
+  border: 2px solid #ffffff;
+  background: transparent;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+/* ===== Conteúdo ===== */
+.conteudo {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+h2 {
+  border-bottom: 2px solid #8a4b1f;   /* borda por baixo dos títulos */
+  padding-bottom: 6px;
+}
+
+.destaque {
+  font-weight: bold;
+  color: #8a4b1f;
+}
+
+/* ===== Produtos (classe: repete-se em cada produto) ===== */
+.lista-produtos {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.produto {
+  width: 250px;
+  border: 1px solid #8a4b1f;
+  padding: 10px;
+  background-color: #ffffff;
+}
+
+.produto img {
+  width: 100%;          /* tamanho controlado */
+  height: 180px;
+  object-fit: cover;
+}
+
+/* ===== Tabela ===== */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid #8a4b1f;
+  padding: 8px 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2b45c;
+}
+
+aside {
+  border-left: 5px solid #f2b45c;
+  padding: 10px 15px;
+  background-color: #fff0d6;
+}
+
+footer {
+  background-color: #3b2a1a;
+  color: #ffffff;
+  text-align: center;
+  padding: 15px;
+}
+
+footer a {
+  color: #f2b45c;
+}
+
+/* ===== Modo escuro (classe que o JavaScript liga/desliga) ===== */
+body.escuro {
+  background-color: #1e1710;
+  color: #f1e6d6;
+}
+
+body.escuro .produto {
+  background-color: #2d2217;
+  border-color: #f2b45c;
+}
+
+body.escuro aside {
+  background-color: #2d2217;
+}
+
+body.escuro th {
+  color: #3b2a1a;
+}

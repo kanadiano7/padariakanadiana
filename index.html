@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Padaria Pão Quente | Gondomar</title>
+  <!-- CSS externo -->
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+  <!-- Cabeçalho com o nome da padaria e o menu -->
+  <header id="cabecalho">
+    <h1>Padaria Pão Quente</h1>
+    <nav>
+      <a href="#sobre">Sobre nós</a>
+      <a href="#produtos">Produtos</a>
+      <a href="#horario">Horário</a>
+    </nav>
+    <button id="botao-modo" type="button">Modo escuro</button>
+  </header>
+
+  <main>
+    <!-- div: serve só para limitar a largura do conteúdo (não tem significado) -->
+    <div class="conteudo">
+
+      <section id="sobre">
+        <h2>Sobre nós</h2>
+        <p>
+          Somos uma padaria artesanal de <span class="destaque">Gondomar</span>.
+          Desde 1985 fazemos pão todos os dias, com farinha local e muita paciência.
+        </p>
+      </section>
+
+      <section id="produtos">
+        <h2>Os nossos produtos</h2>
+        <ul class="lista-produtos">
+          <li class="produto">
+            <img src="imagens/pao.png" alt="Pão de trigo acabado de cozer">
+            <h3>Pão de trigo</h3>
+            <p>Crosta estaladiça e miolo macio.</p>
+          </li>
+          <li class="produto">
+            <img src="imagens/broa.png" alt="Broa de milho tradicional">
+            <h3>Broa de milho</h3>
+            <p>Receita da avó, cozida em forno a lenha.</p>
+          </li>
+          <li class="produto">
+            <img src="imagens/bolo.png" alt="Fatia de bolo de laranja">
+            <h3>Bolo de laranja</h3>
+            <p>Feito com laranjas da região.</p>
+          </li>
+        </ul>
+      </section>
+
+      <section id="horario">
+        <h2>Horário</h2>
+        <table>
+          <thead>
+            <tr><th>Dia</th><th>Abertura</th><th>Fecho</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Segunda a Sexta</td><td>07:00</td><td>19:30</td></tr>
+            <tr><td>Sábado</td><td>07:00</td><td>13:00</td></tr>
+            <tr><td>Domingo</td><td colspan="2">Fechado</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- aside: conteúdo complementar, não essencial à página -->
+      <aside>
+        <p>Dica: encomende o seu pão até às 18:00 e levante-o de manhã, ainda quente.</p>
+      </aside>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2026 Padaria Pão Quente, Gondomar.</p>
+    <p>
+      <a href="https://www.cm-gondomar.pt" target="_blank">Município de Gondomar</a>
+    </p>
+  </footer>
+
+  <!-- JavaScript externo (no fim do body para o HTML já existir quando corre) -->
+  <script src="js/script.js"></script>
+</body>
+</html>
